@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     /*border: red 1px solid;*/
+    background: #212121;
 }
 
 .title {
@@ -10,7 +11,8 @@
     margin: auto auto 40px auto;
     width: 70%;
     height: 100px;
-    border-bottom: solid 2px black
+    border-bottom: solid 2px white;
+    color: white;
 }
 
 .game {
@@ -20,21 +22,38 @@
 
 .word-row {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin-top: 30px;
+    padding: 10px;
+    margin: 0;
 }
 
 input {
-    width: 74px;
-    height: 74px;
-    margin-right: 10px;
-    border: 3px gray solid;
+    width: 75px;
+    height: 75px;
+    border: 3px whitesmoke solid;
     caret-color: transparent;
     text-transform: uppercase;
     font-size: 50px;
-    padding-left: 19px;
     font-family: Ubuntu, "Ubuntu Sans", sans-serif;
     font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 6px;
 }
+
+.correct {
+    background-color: green;
+}
+
+.correctletter {
+    background-color: yellow;
+}
+
+.wrong {
+    background-color: red;
+}
+
+
+
+
 
