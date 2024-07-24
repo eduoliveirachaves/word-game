@@ -27,7 +27,7 @@
     margin: 0;
 }
 
-input {
+.letter {
     width: 75px;
     height: 75px;
     border: 3px whitesmoke solid;
@@ -39,6 +39,7 @@ input {
     color: white;
     text-align: center;
     margin: 6px;
+    padding-top: 5px
 }
 
 .correct {
