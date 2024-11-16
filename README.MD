@@ -9,7 +9,6 @@ Este é um jogo simples de adivinhação de palavras inspirado no **Wordle**, de
   - Letras corretas na posição certa são destacadas (ex.: verde).
   - Letras corretas na posição errada são marcadas de forma diferente (ex.: amarelo).
   - Letras incorretas são destacadas como inválidas (ex.: cinza).
-- **Responsividade**: Interface adaptada para funcionar tanto em computadores quanto em dispositivos móveis.
 
 ## Como Jogar
 
