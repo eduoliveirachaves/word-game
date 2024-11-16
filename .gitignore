@@ -134,3 +134,6 @@ dist
 .pnp.*
 yarn.lock
 
+# simple features
+features.txt
+

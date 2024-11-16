@@ -1,9 +1,27 @@
 let row = 0;
 let col = 1;
-const rows = [".one", ".two", ".three", ".four", ".five"];
+const rows = [".row-1", ".row-2", ".row-3", ".row-4", ".row-5"];
 const validChars = ["Backspace", "Enter"];
 let correctWord = "";
 let end = false;
+
+addEventListener("DOMContentLoaded", () => {
+  console.log("3");
+  const gameDiv = document.querySelector(".game");
+
+  for (let i = 1; i <= 5; i++) {
+    const wordRow = document.createElement("div");
+    wordRow.classList.add("word-row", `row-${i}`);
+
+    for (let j = 0; j < 5; j++) {
+      const letterDiv = document.createElement("div");
+      letterDiv.classList.add("letter");
+      wordRow.appendChild(letterDiv);
+    }
+
+    gameDiv.appendChild(wordRow);
+  }
+});
 
 async function init() {
   await getCorrectWord();
@@ -34,6 +52,7 @@ async function init() {
         .querySelector(`.letter:nth-child(${col})`).innerText = event.key;
 
       col++;
+      console.log("key");
     }
   });
 }
@@ -101,14 +120,15 @@ async function isValidWord(word) {
     }),
   });
   const json = await promise.json();
-  console.log(json);
   return json.validWord;
 }
 
 async function getCorrectWord() {
   const url = "https://words.dev-apis.com/word-of-the-day";
-  const promise = await fetch(url);
-  const json = await promise.json();
+  const getWord = await fetch(url, {
+    method: "GET",
+  });
+  const json = await getWord.json();
   correctWord = json.word;
 }
 
