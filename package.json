@@ -1,0 +1,19 @@
+{
+  "name": "word-game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/eduoliveirachaves/word-game.git",
+  "author": "educhaves <eduardodeoliveirachaves7@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
+  },
+  "scripts": {
+    "prettier": "prettier --write .",
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

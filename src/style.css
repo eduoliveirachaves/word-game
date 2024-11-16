@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  background: #212121;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: auto auto 40px auto;
+  width: 70%;
+  height: 100px;
+  border-bottom: solid 2px white;
+  color: white;
+}
+
+.game {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.word-row {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.letter {
+  width: 75px;
+  height: 75px;
+  border: 3px whitesmoke solid;
+  caret-color: transparent;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: Ubuntu, "Ubuntu Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 6px;
+  padding-top: 5px;
+}
+
+.correct {
+  background-color: green;
+}
+
+.correctletter {
+  background-color: yellow;
+}
+
+.wrong {
+  background-color: red;
+}
